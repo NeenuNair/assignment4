@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style=" color: seagreen; text-align: center;">
+        <h3>CLASS EXERCISES ON JAVASCRIPT</h3>
+    </div>
+    
+    <div>
+
+        <h5> Q.2 Write a JavaScript program to find the most frequent item of an array.</h5> 
+        <input type="text" placeholder="Enter array elements "  id="arrayInp2" ></input><br><br>
+        <button  onclick="function frequentitem()">View Output</button>  
+        <br>
+        <p id="display"></p>        
+    </div>
+
+<script>
+    function frequentitem(){
+    let frequentitem="[ "+ document.getElementById("arrInp1").value + " ]";
+    if(document.getElementById("arrInp1").value==""){
+        document.getElementById("display").innerHTML="Field cannot be empty";
+        return false;
+    }
+    let arr= JSON.parse(frequentitem);
+    // let array=[10,20,20,30,30,30,20,10,10,20];
+    for(var i=0;i<arr.length;i++){
+        var tempElt = arr[i];
+        var tempCount = 0;
+        for(var j=0; j<arr.length;j++){
+            if(arr[j]==tempElt){
+                tempCount++;
+            }
+        }
+        if(tempCount>count){
+            elt=tempElt;
+            count=tempCount;
+        }
+    }
+    document.getElementById("display").innerHTML("The most frequent element is "+ elt +" and count is "+ count);
+ }
+
+
+
+</script>  
+</body>
+</html>

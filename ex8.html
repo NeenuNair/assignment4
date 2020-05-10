@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style=" color: seagreen; text-align: center;">
+        <h3>CLASS EXERCISES ON JAVASCRIPT</h3>
+    </div>
+    <div>
+
+        <h5>Q.8 Write a JavaScript program using for…in to read the objects from an array entered by an user and to arrange it in alphabetical order.</h5> 
+        <input type="text" id="strInp8" placeholder="Enter elements with ' , ' in between"  style="width: 18%;"><br><br>
+        <button onclick="AddItem()">View Output</button> <br>
+    
+     
+    </div>
+    
+<script>
+    var arr = [];
+
+function AddItem(){
+    arr.push(document.getElementById("textValue").value);
+}
+
+function Sort() {
+   document.write(arr);
+
+   var i = 0, j; 
+    while (i < arr.length) { 
+        j = i + 1; 
+        while (j < arr.length) { 
+            if (arr[j].toLowerCase() < arr[i].toLowerCase()) { 
+                var temp = arr[i]; 
+                arr[i] = arr[j]; 
+                arr[j] = temp; 
+            } 
+            j++; 
+        } 
+        i++; 
+    } 
+
+    document.write('<br/>'+ arr);   
+}
+
+</script>  
+</body>
+</html>

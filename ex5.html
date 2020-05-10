@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style=" color: seagreen; text-align: center;">
+        <h3>CLASS EXERCISES ON JAVASCRIPT</h3>
+    </div>
+    
+    <div>
+
+        <h5>Q.5 Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, check if the current number is odd or even, and display the message to the screen as odd or even.</h5> 
+        <button onclick="oddeven();">View Output</button><br>
+        
+    </div>
+    
+
+<script>
+    function oddeven(){
+    for (var i=0;i<=15;i++){
+        if(i == 0 ){
+            document.write('<br/>');
+            document.write(i +" is neither odd or even");
+        }
+        else if(i%2 ==0){
+            document.write('<br/>');
+            document.write( i+" is even.");
+        }
+        else{
+            document.write('<br/>');
+            document.write(i+" is odd");
+        }
+    }
+}
+</script>  
+</body>
+</html>

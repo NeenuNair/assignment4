@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style=" color: seagreen; text-align: center;">
+        <h3>CLASS EXERCISES ON JAVASCRIPT</h3>
+    </div>
+    
+    <div>
+
+        <h5> Q.6 Write a JavaScript function to truncate a string if it is longer than the specified number of characters.</h5> 
+        <input type="text" id="strng" placeholder="Enter a string"><br><br>
+        <input type="number" placeholder="Character length" id="lim"><br><br>
+        <button onclick="text_truncate()">View Output</button><br><br>
+    </div>
+
+<script>
+    function text_truncate(input, length) {
+    var input = document.getElementById("strng").value;
+    var length = document.getElementById("lim").value;
+      if (input.length > length) {
+        document.write(input.slice(0,length));
+      } 
+      else {
+        document.write(input);
+      }
+    }
+
+</script>  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style=" color: seagreen; text-align: center;">
+        <h3>CLASS EXERCISES ON JAVASCRIPT</h3>
+    </div>
+    <div>
+        <h5> Q.9 Write a JavaScript program to print the letters of the word “Javascript” as below in each line using for…of.</h5> 
+        <button onclick="printtext()">View Output</button> <br><br> 
+       
+    </div>
+    
+<script>
+    function printtext(){
+    
+    var txt = ['J','Ja','Jav','Java','Javas','Javasc','Javasc','Javascr','Javascri','Javascrip','Javascript'];
+
+    for (var x of txt) {
+        document.write(x + "<br >");
+    }
+   
+}
+</script>  
+</body>
+</html>
